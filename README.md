@@ -1,7 +1,9 @@
 # iOS app examples
 
-"Guess the Flag" is a guessing game: you get a flag and need to guess which country it corresponds to.
+This repo is a portfolio to showcase my development experience. It contains two simple applications:
 
-"Length Converter" allows you to convert length values from the metric system to the imperial and vice versa.
+* "Guess the Flag" is a guessing game: you are given a flag and have to guess which country it belongs to.
+
+* "Length Converter" allows you to convert length values from the metric system to the imperial system and vice versa.
 
 
