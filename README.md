@@ -1,4 +1,4 @@
-# iOS app examples
+# iOS App Examples
 
 This repo is a portfolio to showcase my development experience. It contains two simple applications:
 
