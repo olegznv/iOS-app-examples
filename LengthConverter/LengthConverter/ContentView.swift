@@ -102,7 +102,7 @@ struct ContentView: View {
                         .keyboardType(.decimalPad)
                         .focused($amountIsFocused)
                 } header: {
-                    Text("Inpur value")
+                    Text("Input value")
                 }
                 
                 // Selecting an output unit of lenth
