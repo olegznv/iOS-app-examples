@@ -15,18 +15,6 @@ struct Title: ViewModifier {
     }
 }
 
-//struct FlagImage: View {
-//
-//    var lands: String
-//
-//    var body: some View {
-//                Image(lands)
-//                    .renderingMode(.original)
-//                    .clipShape(Capsule())
-//                    .shadow(radius: 10)
-//            }
-//    }
-
 struct ContentView: View {
     @State private var showingScore = false
     @State private var showingCounter = false
@@ -34,7 +22,6 @@ struct ContentView: View {
     @State private var scoreTitleEnd = ""
     @State private var userScore = 0
     @State private var counter = 0
-//    @State private var number: Int
     
     @State private var countries = ["Estonia", "France", "Germany", "Ireland", "Italy", "Monaco", "Nigeria", "Poland", "Russia", "Spain", "UK", "US"].shuffled()
     @State private var correctAnswer = Int.random(in: 0...2)
@@ -61,8 +48,6 @@ struct ContentView: View {
                 Spacer()
                 
                 Text("Guess the flag")
-//                    .font(.largeTitle)
-//                    .foregroundColor(.white)
                     .modifier(Title())
                 
                 VStack (spacing: 15){
@@ -72,7 +57,6 @@ struct ContentView: View {
                             .font(.subheadline.weight(.heavy))
                         
                         Text(countries[correctAnswer])
-                        //                            .font(.largeTitle)
                             .modifier(Title())
                     }
                     
@@ -202,17 +186,6 @@ struct ContentView: View {
     
     func flagTapped(_ number: Int) {
         
-//        withAnimation {
-//            rotateAmount += 360
-//        }
-        
-//        .rotation3DEffect(.degrees(rotateAmount), axis: (x: 0, y: 1, z: 0))
-        
-        
-//        if number == 0 {
-//
-//        }
-        
         tappedOn.toggle()
         
         if number == correctAnswer && counter != 4 {
@@ -260,7 +233,6 @@ struct ContentView: View {
         userScore = 0
         endOfGame()
     }
-    
     
     
 }
